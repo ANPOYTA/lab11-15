@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ПП-25, Пойта</title>
+		<link type= "text/css" href= "../style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="main">
+          <h1>Завдання 1</h1>
+			<div class="exercise">
+				<script>
+					"use strict";
+					let Treag = [1, 3, 6, 10, 15, 21, 28, 36, 45];
+					document.write("Масив Treag: ")
+					for (let i = 0; i < Treag.length; i++){
+						document.write(Treag[i], "&nbsp;&nbsp");
+					}
+
+					document.write("<br><br> Масив kvd: ")
+					let kvd = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
+					for (let i = 0; i < Treag.length; i++){
+						document.write(kvd[i], " ");
+					}
+
+					document.write("<br><br>Масив Treag + kvd (масив rez) : ")
+					let rez = Treag.concat(kvd);
+					for (let i = 0; i < rez.length; i++){
+						document.write(rez[i], " ");
+					}
+
+					document.write("<br><br>Відсортований в зворотньому порядку масив: ");
+					rez = rez.reverse();
+					for (let i = 0; i < rez.length; i++){
+						document.write(rez[i], " ");
+					}
+
+				</script>
+			</div>
+            <a class="lab" href="index.html">Назад</a>
+        </div>
+	</body>
+</html>

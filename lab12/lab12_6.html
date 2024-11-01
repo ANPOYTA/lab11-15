@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ПП-25, Пойта</title>
+		<link type= "text/css" href= "../style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="main">
+          <h1>Завдання 6</h1>
+		  <script> "use strict";
+			let guess = 0;
+			let f = true;
+			let min = 1;
+			let max = 1000
+			let count = 0;
+			let answer = confirm("Давайте відгадаю загадане вами число від 1 до 1000?");
+			let round;
+			if (answer) {
+				while (f) {
+					guess = Math.floor(Math.random() * (max - min) + min);
+					round = confirm("Ваше число менше за "+guess+" ?");
+					if (round) {
+						max = guess;
+						count++;
+						guess = Math.floor(Math.random() * (max - min) + min);
+					}
+					else if(max-min == 1){
+						count++;
+						round = confirm("Ваше число менше за "+max+" ?");
+						if (round) alert("Ваше число це "+min)
+						else alert("Ваше число це "+max)
+						f = false;
+					}
+					else{
+						count++;
+						min = guess;
+						guess = Math.floor(Math.random() * (max - min) + min);
+					}
+				}
+			}
+			document.write("Число відгадане за "+count+" раундів");
+		</script>
+            <a class="lab" href="index.html">Назад</a>
+        </div>
+	</body>
+</html>

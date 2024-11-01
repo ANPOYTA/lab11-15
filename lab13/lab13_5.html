@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ПП-25, Пойта</title>
+		<link type= "text/css" href= "../style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="main">
+          <h1>Завдання 5</h1>
+			<div class="exercise">
+				<script>
+					"use strict";
+					function printText(txt, txt_size = 14, random=false) {
+						if(random==true) document.write("Ви обрали випадковий розмір тексту, але не реалізували цього");
+						else document.write(`<div style="font-size:${txt_size}pt;">${txt} (${txt_size})</div>`);
+					}
+					printText("Великий текст", 40);
+					printText("Випадковий шрифт", 24, true);
+					printText("Шрифт за замовченням");
+					printText("Дрібний шрифт", 8);
+				</script>
+			</div>
+            <a class="lab" href="index.html">Назад</a>
+        </div>
+	</body>
+</html>

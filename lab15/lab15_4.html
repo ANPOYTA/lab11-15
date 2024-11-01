@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ПП-25, Пойта</title>
+		<link type= "text/css" href= "../style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="main">
+          <h1>Завдання 4</h1>
+			<div class="exercise">
+				<script>
+					"use strict"
+					let string = prompt("Введіть текст");
+					let result = "";
+					let array = string.split(" ");
+					let swap, temp;
+					for (let i = 0; i < array.length; i++){
+						let a = array[i].split("");
+						let len = a.length-1;
+						for (let j = 1; j < len; j++){
+							temp = a[j];
+							swap = Math.floor(Math.random()*(len-j)+j);
+							a[j] = a[swap];
+							a[swap] = temp;
+						}
+						a = a.join("");
+						console.log(a);
+						result+=a+" ";
+					}
+					document.write(result);
+				</script>
+			</div>
+            <a class="lab" href="index.html">Назад</a>
+        </div>
+	</body>
+</html>

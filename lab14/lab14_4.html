@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ПП-25, Пойта</title>
+		<link type= "text/css" href= "../style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="main">
+          <h1>Завдання 4</h1>
+			<div class="exercise">
+				<script>
+					let fruits=['apple','pineapple','mango','melon','grape'];
+					let citrus=['orange','lemon','lime'];
+					document.write("The fruits array: ", fruits);
+					document.write("<br><br> The citrus array: ", citrus);
+					fruits = fruits.concat(citrus)
+					document.write("<br><br> The concatenated fruits array: ", fruits);
+					fruits.splice(3, 0, "pear", "cherry", "plum", "raspberry", "strawberry")
+					document.write("<br><br> The array with new items: ", fruits);
+					changed = fruits.slice(0, -3);
+					document.write("<br><br> The array with deleted items: ", changed);
+					changed = changed.sort();
+					document.write("<br><br> The sorted array : ", changed);
+					document.write("<br><br> The sorted reverse array : ", changed.reverse());
+					changed = changed.sort(function(a, b){return b.length - a.length});
+					document.write("<br><br> The sorted by length array : ", changed.reverse());
+				</script>
+			</div>
+            <a class="lab" href="index.html">Назад</a>
+        </div>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ПП-25, Пойта</title>
+		<link type= "text/css" href= "../style.css" rel="stylesheet">
+	</head>
+	<body>
+		<script>
+			"use strict";
+			alert("Обчислюємо площу, периметр трикутника");
+			let a=parseInt(prompt("Введіть сторону a", ""));
+			let b=parseInt(prompt("Введіть сторону b", ""));
+			let c=parseInt(prompt("Введіть сторону с", ""));
+			if (a+b>c && a+c>b && b+c>a){
+				let p=(a+b+c)/2;
+				let S=Math.sqrt(p*(p-a)*(p-b)*(p-c));
+				alert("Площа =" + S.toFixed(2));
+				alert("Периметр =" + p.toFixed (2));
+			}
+			else alert("Невірні дані");
+		</script>
+		<div class="main">
+          <h1>Завдання 3</h1>
+            <a class="lab" href="index.html">Назад</a>
+        </div>
+	</body>
+</html>

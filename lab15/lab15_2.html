@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ПП-25, Пойта</title>
+		<link type= "text/css" href= "../style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="main">
+          <h1>Завдання 2</h1>
+			<div class="exercise">
+				<script>
+					"use strict"
+					let str=prompt("Введіть  ваш рядок");
+					document.write(`<h3>Рядок:  ${str} </h3>`);
+					let words = str.split(" ");
+					if (words.length<2){
+						document.write("<h3>В рядку менше двох слів</h3>");
+					}
+					else{
+						document.write(`<h3>У другому слові ${words[1].length} літер</h3>`);
+					}
+
+				</script>
+			</div>
+            <a class="lab" href="index.html">Назад</a>
+        </div>
+	</body>
+</html>

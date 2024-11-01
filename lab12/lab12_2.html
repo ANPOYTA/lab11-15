@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ПП-25, Пойта</title>
+		<link type= "text/css" href= "../style.css" rel="stylesheet">
+	</head>
+	<body>
+		<script>
+			"use strict";
+			//Приклад перевірки, чи всі числа знаходяться в діапазоні
+			alert("Введіть числа для діапазону (a, b)");
+			let a = parseInt(prompt("Число a"));
+			let b = parseInt(prompt("Число b"));
+			if (a>b){
+				let temp = a;
+				a = b;
+				b = temp;
+			}
+			let x = parseInt(prompt("Число x (Перевірка, чи число в діапазоні)"));
+			let y = parseInt(prompt("Число y (Перевірка, чи число в діапазоні)"));
+			let z = parseInt(prompt("Число z (Перевірка, чи число в діапазоні)"));
+
+
+			if (a<x && x<b) document.write("<p>Число x знаходиться в діапазоні");
+			else document.write("<p>Число x поза діапазоном");
+			if (a<y && y<b) document.write("<p>Число y знаходиться в діапазоні");
+			else document.write("<p>Число y поза діапазоном");;
+
+			let message = a < z && z < b ? "<p>Число z знаходиться в діапазоні" : "<p>Число я поза діапазоном";
+			document.write(message);
+		</script>
+		<div class="main">
+          <h1>Завдання 2</h1>
+            <a class="lab" href="index.html">Назад</a>
+        </div>
+	</body>
+</html>

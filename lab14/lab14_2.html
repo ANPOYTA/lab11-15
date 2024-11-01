@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ПП-25, Пойта</title>
+		<link type= "text/css" href= "../style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="main">
+          <h1>Завдання 2</h1>
+			<div class="exercise">
+				<script>
+					"use strict";
+					let array = [];
+					let min = 9999;
+					let min_id = 0;
+					for (let i = 0; i < 15; i++){
+						array.push(Math.floor(Math.random()*100));
+						if(array[i] < min){
+							min = array[i];
+							min_id = i;
+						}
+					}
+					alert("Масив рандомних чисел: "+array+"   Найменше число: "+array[min_id]);
+					document.write(`<h3>Масив рандомних чисел: ${array} Найменше число: ${array[min_id]}</h3>`)
+					let a = array[min_id];
+					array[min_id] = array[2];
+					array[2] = a;
+					alert("Масив після перестановки: "+array);
+					document.write(`<h3>Масив після перестановки: ${array}</h3>`)
+
+
+				</script>
+			</div>
+            <a class="lab" href="index.html">Назад</a>
+        </div>
+	</body>
+</html>

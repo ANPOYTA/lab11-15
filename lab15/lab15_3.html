@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ПП-25, Пойта</title>
+		<link type= "text/css" href= "../style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="main">
+          <h1>Завдання 3</h1>
+			<div class="exercise">
+				<script>
+					"use strict"
+					let alphabet = "абвгґдеєжзиіїйклмнопрстуфхцчшщьюя";
+					let string = prompt("Введіть текст(українською)");
+					string = string.toLowerCase();
+					let result = "";
+					for (let i = 0; i < string.length; i++){
+						console.log(string[i], alphabet.search(string[i]))
+						if (alphabet.search(string[i]) == 32)
+							result+=alphabet[0];
+						else if ( alphabet.search(string[i]) != -1){
+							result+=alphabet[alphabet.search(string[i])+1];
+						}
+						else{
+							result+=string[i];
+						}
+					}
+
+					document.write("Вхідний текст: ",string);
+					document.write("<br>Вихідний текст: ",result);
+				</script>
+			</div>
+            <a class="lab" href="index.html">Назад</a>
+        </div>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ПП-25, Пойта</title>
+		<link type= "text/css" href= "../style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="main">
+          <h1>Завдання 1</h1>
+			<div class="exercise">
+				<script>
+					"use strict";
+					let months = ["Січень", "Лютий", "Березень", "Квітень", "Травень", "Липень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"];
+					for (let i = 0; i < 12; i++){
+						document.write("<span style='font-size:",Math.floor(Math.random() * (32 - 12) + 12),"px; color: #",Math.floor(Math.random()*16777215).toString(16),"; background:#",Math.floor(Math.random()*16777215).toString(16),";'>",months[i],"</span><br>")
+					}
+				</script>
+			</div>
+            <a class="lab" href="index.html">Назад</a>
+        </div>
+	</body>
+</html>

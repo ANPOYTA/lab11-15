@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ПП-25, Пойта</title>
+		<link type= "text/css" href= "../style.css" rel="stylesheet">
+	</head>
+	<body>
+		<script>
+			"use strict";
+			document.write(
+				"<p style='text-align:center'>Використання оператора <strong>IF</strong></p>"
+			);
+			let group = confirm("Ваша група ПП-24?");
+			if (group == true) alert("Вітання студенту групи ПП-24!");
+			else {
+				group = confirm("Ваша група ПП-25?");
+				if (group == true) alert("Вітання студенту групи ПП-25!");
+				else {
+					group = confirm("Ваша група ПП-26?");
+					if (group == true) alert("Вітання студенту групи ПП-26!");
+					else alert("Ви не належите до груп ПП 24-26")
+			}
+			}
+			console.log(group);
+		</script>
+		<div class="main">
+          <h1>Завдання 1</h1>
+            <a class="lab" href="index.html">Назад</a>
+        </div>
+	</body>
+</html>
